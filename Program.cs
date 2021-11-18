@@ -7,24 +7,16 @@ namespace StackAndQueue
     {
         static void Main(string[] args)
         {
-            Stack<int> stack = new Stack<int>();
-            stack.Push(70);
-            stack.Push(30);
-            stack.Push(56);
-            foreach (int item in stack)
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine("---------------");
-            stack.Pop();
+            Queue<int> queue = new Queue<int>();
 
-            foreach (int item in stack)
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine("---------------");
-            Console.WriteLine(stack.Peek());
+            queue.Enqueue(56);
+            queue.Enqueue(30);
+            queue.Enqueue(70);
 
+            foreach (var element in queue)
+            {
+                Console.WriteLine(element);
+            }
 
 
         }
