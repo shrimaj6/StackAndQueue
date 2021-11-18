@@ -18,7 +18,12 @@ namespace StackAndQueue
                 Console.WriteLine(element);
             }
 
-
+            Console.WriteLine("--------------");
+            queue.Dequeue();
+            foreach (var ele in queue)
+            {
+                Console.WriteLine(ele);
+            }
         }
     }
 }
